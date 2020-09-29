@@ -1,3 +1,5 @@
+Hello, this is my first lumen API for study :D
+
 # Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
