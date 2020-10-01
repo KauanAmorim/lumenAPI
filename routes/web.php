@@ -16,3 +16,12 @@
 $router->get('/', function () use ($router) {
     return 'Olá Mundo!';
 });
+
+$router->get("/api/cars", "CarsController@getAll");
+
+$router->group(['prefix' => "api/car"], function() use ($router){
+    $router->post("/", "CarsController@store");
+    $router->get("/{id}", "CarsController@get");
+    $router->put("/{id}", "CarsController@update");
+    $router->delete("/{id}", "CarsController@destroy");
+});
